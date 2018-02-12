@@ -15,16 +15,16 @@ class TestRockpaperscissor < Minitest::Test
     @rockpaperscissors8 = Rockpaperscissor.new("paper", "scissors")
   end
 
-  def test_rockwin
-    assert_equal("Rock wins!", @rockpaperscissors.result)
+  def test_rockwin_player1
+    assert_equal("Player one wins by playing rock!", @rockpaperscissors.result)
   end
 
-  def test_paperwin
-    assert_equal("Paper wins!", @rockpaperscissors1.result)
+  def test_paperwin_player1
+    assert_equal("Player one wins by playing paper!", @rockpaperscissors1.result)
   end
 
-  def test_scissorwin
-    assert_equal("Scissors wins!", @rockpaperscissors2.result)
+  def test_scissorwin_player1
+    assert_equal("Player one wins by playing scissors!", @rockpaperscissors2.result)
   end
 
   def test_rockdraw
@@ -39,16 +39,16 @@ class TestRockpaperscissor < Minitest::Test
     assert_equal("Draw!", @rockpaperscissors5.result)
   end
 
-  def test_rockwin
-    assert_equal("Rock wins!", @rockpaperscissors6.result)
+  def test_rockwin_player2
+    assert_equal("Player two wins by playing rock!", @rockpaperscissors6.result)
   end
 
-  def test_paperwin
-    assert_equal("Paper wins!", @rockpaperscissors7.result)
+  def test_paperwin_player2
+    assert_equal("Player two wins by playing paper!", @rockpaperscissors7.result)
   end
 
-  def test_scissorwin
-    assert_equal("Scissors wins!", @rockpaperscissors8.result)
+  def test_scissorwin_player2
+    assert_equal("Player two wins by playing scissors!", @rockpaperscissors8.result)
   end
 
 end
